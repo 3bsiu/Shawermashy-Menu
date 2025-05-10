@@ -1,0 +1,175 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff9f6;
+  color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #a30000;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+header .logo {
+  max-width: 150px;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+.header-text {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #fff;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #ff4d4d;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 1.0px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.section {
+  padding: 20px;
+}
+.section h2 {
+  color: #a30000;
+  border-bottom: 2px solid #a30000;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px dashed #ccc;
+  flex-wrap: wrap;
+}
+.menu-item span {
+  display: flex;
+  align-items: center;
+}
+.menu-item img {
+  width: 110px;
+  height: 110px;
+  border-radius: 10px;
+  margin-left: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.menu-item:last-child {
+  border-bottom: none;
+}
+.menu-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+.notes {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+  text-align: right;
+}
+footer {
+  background-color: #a30000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+.cart {
+    margin-top: 20px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .cart ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .cart ul li {
+    padding: 8px;
+    background-color: #f4f4f4;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cart .total {
+    font-weight: bold;
+  }
+
+  .menu-item button {
+    margin-left: 10px;
+  }
+
+  .remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  /* تصميم الزر العائم */
+  .floating-cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6f00;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .floating-cart-btn:hover {
+    background-color: #ff8f00;
+  }
