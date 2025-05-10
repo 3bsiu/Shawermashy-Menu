@@ -261,4 +261,99 @@ body {
       right: 20px;
     }
   }
-  
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+  .whatsapp-float img {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+  .social-icons {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .social-button {
+    display: inline-block;
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+  }
+
+  .social-button.facebook {
+    background-color: #3b5998;
+  }
+
+  .social-button.instagram {
+    background-color: #E1306C;
+  }
+
+  .social-button:hover {
+    transform: scale(1.1);
+  }
+
+  .social-button:active {
+    transform: scale(1);
+  }
+  #customer-reviews {
+    background-color: #eb0000;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+#customer-reviews h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dd6f6f;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: rgb(238, 46, 46);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
