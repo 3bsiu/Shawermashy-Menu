@@ -25,7 +25,6 @@
 
 
   <title>قائمة شاورماشي</title>
- <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5DJR1DPTR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -37,6 +36,7 @@
   <meta name="google-site-verification" content="euxbTo1IZEGqtVCdVLZacY4k6kG_RaCTRvdk_bgvAdM" />
 </head>
 <body>
+  
   <header>
     <img src="shawermashy.jpg.png" alt="logo shawermashy " class="logo">
     <h1>قائمة شاورماشي</h1>
@@ -191,12 +191,18 @@
 </div>
 
   </div>
+  <div class="cart" style="display: none;" id="cart-container">
+    <ul id="cart-list"></ul>
+    <p>الإجمالي: <span id="total-price">0.00</span> د.أ</p>
+    <button id="whatsapp-btn" onclick="sendToWhatsApp()">📤 إرسال واتساب</button>
+  </div>
   <div class="cart">
     <h3>حساب طلبك </h3>
     <ul id="cart-list"></ul>
     <div class="total">
       <span>المجموع:</span> <span id="total-price">0.00</span> د.أ
     </div>
+    
   </div>
   <div class="floating-cart-btn" onclick="toggleCart()">
     🛒
