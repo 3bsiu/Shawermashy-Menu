@@ -35,25 +35,52 @@ body {
   nav {
     display: flex;
     justify-content: center;
-    background-color: #ff4d4d;
-    padding: 10px 0;
+    align-items: center;
+    background-color: #a30000;
+    padding: 12px 20px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding-top: 1.0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: top 0.4s ease, background-color 0.3s ease;
+    font-family: 'Cairo', sans-serif;
+  }
+  
+  nav.hide-nav {
+    top: -100px; /* يخفي الناف بالكامل عند التمرير */
   }
   
   nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.2em;
+    margin: 0 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 3px;
+    background-color: #ffcccb;
+    transition: width 0.3s ease;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
   }
   
   nav a:hover {
-    text-decoration: underline;
+    color: #ffeaea;
   }
+  
+
   
   .section {
     padding: 20px;
@@ -312,48 +339,66 @@ body {
   .social-button:active {
     transform: scale(1);
   }
-  #customer-reviews {
-    background-color: #eb0000;
-    padding: 20px;
-    margin-top: 30px;
-    border-radius: 8px;
-}
-
-#customer-reviews h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.reviews-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.review-form {
-    margin-top: 30px;
-    text-align: center;
-}
-
-textarea {
+  .menu-item button {
     width: 100%;
-    height: 100px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #dd6f6f;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: rgb(238, 46, 46);
+    background: linear-gradient(135deg, #ff5722, #ff9800);
+    color: white;
     border: none;
-    border-radius: 5px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 16px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
+    transition: all 0.3s ease;
+    font-family: 'Cairo', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  .menu-item button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+  }
+  
+  .menu-item button:hover::before {
+    left: 125%;
+  }
+  
+  .menu-item button:hover {
+    background: linear-gradient(135deg, #ff7043, #ffa726);
+    transform: scale(1.02);
+  }
+  
+  .menu-item button:active {
+    transform: scale(0.98);
+    background: linear-gradient(135deg, #e64a19, #ffb74d);
+  }
+  #whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: 'Cairo', sans-serif;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #whatsapp-btn:hover {
+    background-color: #1ebe5d;
+  }
+  
